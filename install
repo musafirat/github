@@ -1,0 +1,11 @@
+#!/bin/bash
+
+yum -y install nano wget
+
+echo "wget nano installed"
+
+wget autoinstall.plesk.com/plesk-installer
+
+echo "plesk bash downloaded"
+
+sh ./plesk-installer --all-versions
