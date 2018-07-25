@@ -1,0 +1,7 @@
+# https://support.plesk.com/hc/en-us/articles/213402609-How-to-change-the-mail-queue-lifetime-for-Postfix
+
+postconf | grep maximal_queue_lifetime
+
+maximal_queue_lifetime = 5d
+
+postconf -e 'maximal_queue_lifetime = 1d'
